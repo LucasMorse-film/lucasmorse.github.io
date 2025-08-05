@@ -1,0 +1,728 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bitcount Grid Double", system-ui;
+    font-weight: 400;
+    letter-spacing: .7px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+/*---------------------------------HOMEPAGE STYLING-----------------------
+--------------------------------------------------------------------------*/
+
+.homepage-wrapper{
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.scroller{
+    max-width: 22%;
+}
+
+.scroller-inner{
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .text{
+        font-weight: bold;
+        font-size: 12px;
+        animation: color-change 12s infinite;
+    }
+}
+
+.scroller{
+    position: absolute;
+    margin-top: 3.5%;
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 50%, white 50%, transparent);
+}
+
+.scroller .scroller-inner{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 100s linear infinite;
+}
+
+.header{
+    max-width: 1500px;
+    text-align: center;
+    margin-bottom: 100px;
+    animation: color-change 12s infinite;
+    position: absolute;
+    z-index: 2;
+}
+
+ul > li{
+    margin-right: 120px;
+    float: inline-start;
+    height: 100%;
+    list-style: none;
+
+    & > p{
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        animation: color-change 12s infinite;
+        margin-top: 4%;
+    }
+}
+
+#photography{
+    margin-top: 60%;
+}
+
+.navMenu-wrapper{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 150px;
+    margin-right: 45px;
+    z-index: 2;
+}
+
+#about:hover{
+    filter: invert(80%);
+}
+
+#moving-image:hover{
+    filter: invert(80%);
+}
+
+#photography{
+    margin-bottom: 50px;
+}
+
+#photography:hover{
+    filter: invert(80%);
+}
+
+/* ----------------------------------ABOUTPAGE STYLING------------------------
+------------------------------------------------------------------------------*/
+
+.aboutpage-wrapper{
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.aboutSide2{
+    width: 40%;
+    margin-top: 7%;
+}
+
+.profile-wrapper{
+    width: 100%;
+    height: 50%;
+}
+
+.profile-wrapper > img{
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.aboutSide1{
+    margin-top: 1%;
+    background-size: cover;
+    background-position: center;
+}
+
+.homebutton{
+    max-width: 1500px;
+    text-align: center;
+    margin-bottom: 100px;
+    animation: color-change 12s infinite;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+#aboutText-wrapper{
+    display: inline;
+}
+
+.aboutContact{
+    margin-top: 15px;
+}
+
+@keyframes color-change {
+    0% {color: red;}
+    20% {color: yellow;}
+    40% {color: green;}
+    60% {color: purple;}
+    80% {color: blue;}
+    100% {color: red;}
+}
+
+
+/*----------------------------------MOVING-IMAGE PORTFOLIO-------------------------------
+-----------------------------------------------------------------------------------------*/
+
+.movingImage-wrapper{
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.movingImage-portfolio{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    grid-template-rows: repeat(8, 100px);
+    grid-template-columns: repeat(8, 150px);
+    column-gap: 25px;
+    row-gap: 50px;
+    z-index: 1;
+}
+
+.portfolio-item{
+    background: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    &.square{
+        grid-row: span 2;
+        grid-column: span 2;
+        color: black;
+    }
+
+    &.small{
+        grid-row: span 1;
+        grid-column: span 1;
+        background: white;
+        color: white;
+    }
+}
+
+.textGrid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    grid-template-rows: repeat(8, 150px);
+    grid-template-columns: repeat(8, 175px);
+    margin-top: 90px;
+    position: absolute;
+}
+
+.item-text{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    justify-self: start;
+    z-index: 10;
+    grid-row: span 2;
+    grid-column: span 2;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#one{
+    background-image: url("wie-soll-ich-mich-nennenCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#two{
+    background-image: url("set-the-stageCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#three{
+    background-image: url("roundaboutCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#four{
+    background-image: url("tightropeCover.png");
+    background-size: 115%;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#five{
+    background-image: url("addictionCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#six{
+    background-image: url("organic-meetCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#seven{
+    background-image: url("bark-of-the-dogCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#eight{
+    background-image: url("my-heart-wont-stop-beatingCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#nine{
+    background-image: url("i-killed-your-fishyCover.png");
+    background-size: 110%;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+#ten{
+    background-image: url("for-leo-and-r-beaversCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    &:hover{
+        background-position: 45%;
+    }
+}
+
+#eleven{
+    background-image: url("zu-meinem-juengeren-ichCover.png");
+    background-size: cover;
+    background-position: center;
+    transition: all ease-in-out 360ms;
+
+    & a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    &:hover{
+        background-position: 40%;
+    }
+}
+
+/*-----------------------------PROJECT-PAGE STYLING-----------------------
+--------------------------------------------------------------------------*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.projects-wrapper{
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.back-to-projects{
+    left: 5%;
+    position: absolute;
+    z-index: 10;
+
+    &:hover{
+        mask: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), 20%);
+    }
+
+    & .homebutton{
+        font-size: 12px;
+    }
+}
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity;
+    transition-delay: 200ms;
+    height: 70%;
+    width: 70%;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 47%;
+    transform: translateY(-50%);
+    color: rgba(190, 190, 190, 1);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus{
+    outline: 1px solid white;
+}
+
+.carousel-button.prev {
+    left: 2rem;
+}
+
+.carousel-button.next{
+    right: 2rem;
+}
+
+
+/*-----------------------------PROJECT-PAGE STYLING-----------------------
+--------------------------------------------------------------------------*/
+
+.digitalJournal-wrapper{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 50px;
+    flex-wrap: wrap;
+    margin-left: -25px;
+}
+
+.digitalJournal-portfolio{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    grid-template-rows: repeat(100, 100px);
+    grid-template-columns: repeat(8, 150px);
+    column-gap: 25px;
+    row-gap: 50px;
+    z-index: 1;
+
+    & .large-photo{
+        grid-row: span 4;
+        grid-column: span 6;
+    }
+
+    & .small-photo{
+        grid-row: span 3;
+        grid-column: span 4;
+    }
+
+    & .stamp{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    & .heading{
+        grid-row: span 1;
+        grid-column: span 8;
+    }
+
+    & .blog{
+        grid-row: span 1;
+        grid-column: span 8;
+    }
+
+    & .column-blog{
+        grid-row: span 4;
+        grid-column: span 2;
+    }
+}
+
+.column-blog > h1{
+    margin-right: 5%;
+    margin-left: -10%;
+}
+
+#j-one{
+    background-image: url("digital-journal/kristallkronleuchter.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-two{
+    background-image: url("digital-journal/abendessen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-three{
+    min-width: 0; 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden;
+}
+
+#j-three video {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border: 5px solid black;
+}
+
+
+#j-four{
+    background-image: url("digital-journal/wespe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-five{
+    background-image: url("digital-journal/wespe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-six{
+    background-image: url("digital-journal/wespe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-seven{
+    background-image: url("digital-journal/wespe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-eight{
+    background-image: url("digital-journal/wespe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-nine{
+    background-image: url("digital-journal/wespe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-ten{
+    background-image: url("digital-journal/wespe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-eleven{
+    background-image: url("digital-journal/wespe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#j-twelve{
+    background-image: url("digital-journal/sci-fi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+@keyframes color-change {
+    0% {color: red;}
+    20% {color: yellow;}
+    40% {color: green;}
+    60% {color: purple;}
+    80% {color: blue;}
+    100% {color: red;}
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(-50%);
+    }
+}
