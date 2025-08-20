@@ -573,7 +573,8 @@ ul > li{
     height: 100vh;
     padding: 50px;
     flex-wrap: wrap;
-    margin-left: -25px;
+    margin-left: -32px;
+    margin-bottom: 30px;
 }
 
 .digitalJournal-portfolio{
@@ -581,7 +582,7 @@ ul > li{
     height: 100%;
     width: 100%;
     margin-top: 100px;
-    grid-template-rows: repeat(100, 100px);
+    grid-template-rows: repeat(500, 100px);
     grid-template-columns: repeat(8, 150px);
     column-gap: 25px;
     row-gap: 50px;
@@ -616,6 +617,16 @@ ul > li{
         grid-row: span 4;
         grid-column: span 2;
     }
+
+    & .skinny-blog{
+        grid-row: span 4;
+        grid-column: span 1;
+    }
+
+    & .triple{
+        grid-row: span 3;
+        grid-column: span 2;
+    }
 }
 
 .column-blog > h1{
@@ -625,14 +636,17 @@ ul > li{
 
 #j-one{
     background-image: url("digital-journal/kristallkronleuchter.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-two{
-    background-image: url("digital-journal/abendessen.png");
-    background-size: cover;
+    background-image: url("digital-journal/abendessen.jpg");
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid black;
 }
 
 #j-three{
@@ -656,59 +670,120 @@ ul > li{
 
 #j-four{
     background-image: url("digital-journal/wespe.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-five{
     background-image: url("digital-journal/wespe.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-six{
     background-image: url("digital-journal/wespe.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-seven{
     background-image: url("digital-journal/wespe.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-eight{
     background-image: url("digital-journal/wespe.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-nine{
     background-image: url("digital-journal/wespe.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-ten{
     background-image: url("digital-journal/wespe.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-eleven{
     background-image: url("digital-journal/wespe.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #j-twelve{
     background-image: url("digital-journal/sci-fi.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
+#j-thirteen,
+#j-fourteen{
+    outline: 5px solid black;
+}
 
+#j-fifteen{
+    background-image: url("digital-journal/streik1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#j-sixteen{
+    background-image: url("digital-journal/streik3.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#j-seventeen{
+    background-image: url("digital-journal/still1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#j-eighteen{
+    background-image: url("digital-journal/still2.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#j-nineteen{
+    background-image: url("digital-journal/schimmel1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#j-twenty{
+    background-image: url("digital-journal/schimmel2.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#j-twentyone{
+    background-image: url("digital-journal/schimmel3.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 
